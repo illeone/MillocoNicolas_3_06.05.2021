@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header #header__logoSite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header img {
+  width: 40%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#localisation {
+  background: #F3F3F3;
+  -webkit-box-shadow: 5px 12px 5px -10px #d2cccc inset;
+          box-shadow: 5px 12px 5px -10px #d2cccc inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#presentation {
+  background: #FAFAFA;
+}
+
+#presentation h1 {
+  margin-top: 0rem;
+}
+
+.fonctionnement {
+  height: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fonctionnement .fonctionnement__block {
+  background-color: #F6F6F6;
+  height: 4.5rem;
+  min-width: 80%;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 2px 5px 10px 0px #e4e0e0;
+          box-shadow: 2px 5px 10px 0px #e4e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement .fonctionnement__block .fa-mobile-alt {
+  margin-right: 1rem;
+  margin-left: 1.5rem;
+  color: #7e7e7e;
+}
+
+.fonctionnement .fonctionnement__block .fa-list-ul {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  margin-left: 1.5rem;
+}
+
+.fonctionnement .fonctionnement__block .fa-store {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  margin-left: 1.5rem;
+}
+
+.article {
+  background: #F3F3F3;
+}
+
+.restaurant {
+  background-color: #F3F3F3;
+  min-width: 35%;
+  max-width: 95%;
+  height: 15rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0px 0px 12px 0px #d2cccc;
+          box-shadow: 0px 0px 12px 0px #d2cccc;
+  margin-top: 2%;
+  position: relative;
+}
+
+.restaurant .restaurant__img {
+  height: 11rem;
+  width: 100%;
+  margin: 0;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.restaurant .restaurant__badge {
+  background-color: #99e2d0;
+  color: #1b6150;
+  position: relative;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  padding: 0.5rem;
+}
+
+.restaurant .restaurant__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant .restaurant__footer .restaurant__nom {
+  margin-bottom: 0.5rem;
+}
+
+.restaurant .restaurant__footer .restaurant__lieu {
+  margin-top: 0.5rem;
+}
+
+.restaurant .restaurant__footer .restaurant__coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.footer {
+  background-color: #353535;
+  height: 10rem;
+}
+
+.footer #footer__logoSite {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 40%;
+}
+
+.footer img {
+  width: 60%;
+  margin: 1rem;
+}
+
+.footer .footer__liste {
+  margin-left: 1rem;
+}
+
+.footer .footer__lien {
+  color: white;
+  line-height: 1.5rem;
+}
+
+.footer .fa-utensils {
+  margin-right: 1rem;
+}
+
+.footer .fa-hands-helping {
+  margin-right: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+}
+
+a
+{
+    text-decoration:none;
+    color: black;
+}
+
+.header{
+
+    #header__logoSite{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    img{
+    width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    }
+}
+
+#localisation{
+    background: #F3F3F3;
+    box-shadow: 5px 12px 5px -10px #d2cccc inset;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+#presentation{
+    background:#FAFAFA;
+    h1{
+        margin-top: 0rem;
+    }
+}
+
+.fonctionnement{
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .fonctionnement__block{
+        background-color: #F6F6F6;
+        height: 4.5rem;
+        min-width: 80%;
+        margin-bottom: 1rem;
+        border-radius: 1.5rem;
+        box-shadow: 2px 5px 10px 0px #e4e0e0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        .fa-mobile-alt{
+            margin-right: 1rem;
+            margin-left: 1.5rem;
+            color: #7e7e7e;
+        }
+        .fa-list-ul{
+            margin-right: 1rem;
+            color: #7e7e7e;
+            margin-left: 1.5rem;
+        }
+        .fa-store{
+            margin-right: 1rem;
+            color: #7e7e7e;
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+.article{
+    background: #F3F3F3;
+
+}
+.restaurant{
+    background-color: #F3F3F3;
+    min-width: 35%;
+    max-width: 95%;
+    height: 15rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 12px 0px #d2cccc;
+    margin-top: 2%;
+
+    position: relative;
+
+    .restaurant__img{
+        height: 11rem;
+        width: 100%;
+        margin: 0;
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+        object-fit: cover;
+        position: relative;
+    }
+    .restaurant__badge{
+        background-color: #99e2d0;
+        color: #1b6150;
+        position: relative;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
+        padding: 0.5rem;
+    }
+    .restaurant__footer{
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        position: relative;
+        justify-content: space-between;
+
+        .restaurant__nom{
+            margin-bottom: 0.5rem;
+        }
+        .restaurant__lieu{
+            margin-top: 0.5rem;
+        }
+        .restaurant__coeur{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            font-size: 1.6rem;
+        }
+    }
+}
+.footer{
+    background-color:#353535;
+    height: 10rem;
+
+    #footer__logoSite{
+        filter: invert(100%);
+        width:40%; 
+    }
+    img{
+        width:60%;
+        margin: 1rem;
+    }
+    .footer__liste{
+        margin-left: 1rem;
+    }
+    .footer__lien{
+        color: white;
+        line-height: 1.5rem;
+    }
+    .fa-utensils{
+        margin-right: 1rem;
+    }
+    .fa-hands-helping{
+        margin-right: 0.5rem;
+    }
+}
