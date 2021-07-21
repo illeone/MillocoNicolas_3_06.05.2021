@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 a
@@ -16,12 +17,35 @@ a
         justify-content: center;
     }
     img{
-    width: 40%;
+    width: 11rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
     align-items: baseline;
     justify-content: center;
+    }
+    #presentation{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    #bouton__explorer{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        border: 0;
+        padding: 0.80rem 1.4rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+        border-radius: 2rem;
+        color: white;
+        background-image:linear-gradient(174deg, rgba(255,121,218,1) 18%, rgba(147,86,220,1) 86%);
+        cursor: pointer;
+        box-shadow:0px 2px 5px 1px#b1acac;   
+        transition: 0.4s;
+    }
+    #bouton__explorer:hover{ 
+        box-shadow:0px 4px 8px 1px#696565;
+        transition: 0.4s;
+        filter: brightness(108%);
     }
 }
 
@@ -31,29 +55,48 @@ a
     display: flex;
     align-items: baseline;
     justify-content: center;
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 0;
+
+    #localisation__texte{
+        margin-left: 1rem;
+    }
 }
 #presentation{
     background:#FAFAFA;
     h1{
         margin-top: 0rem;
+        font-size: 1.6rem;
+    }
+    #sousTitre{
+        font-size: 1.05rem;
+        color: rgb(102, 101, 101);
     }
 }
-
+.section_1{
+    h2{
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+    }
+}
 .fonctionnement{
     height: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
 
     .fonctionnement__block{
         background-color: #F6F6F6;
         height: 4.5rem;
-        min-width: 80%;
+        width: 90%;
         margin-bottom: 1rem;
         border-radius: 1.5rem;
         box-shadow: 2px 5px 10px 0px #e4e0e0;
         display: flex;
-        justify-content: left;
         align-items: center;
 
         .fa-mobile-alt{
@@ -72,21 +115,52 @@ a
             margin-left: 1.5rem;
         }
     }
+    .fonctionnement__degustez{
+        background:#f1e6fd ;
+    }
+}
+.fonctionnement{
+    counter-reset: compteListe;
+}
+.fonctionnement__block::before{
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: 3%;  
 }
 
 .article{
     background: #F3F3F3;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.article__titre{
+    background: #F3F3F3;
+    margin-bottom: 0;
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+     
+}
+
+
 .restaurant{
     background-color: #F3F3F3;
     min-width: 35%;
-    max-width: 95%;
+    max-width: 90%;
     height: 15rem;
     border-radius: 1.5rem;
     box-shadow: 0px 0px 12px 0px #d2cccc;
-    margin-top: 2%;
-
+    margin-bottom: 5%;
     position: relative;
 
     .restaurant__img{
@@ -100,7 +174,7 @@ a
     }
     .restaurant__badge{
         background-color: #99e2d0;
-        color: #1b6150;
+        color: #1b5849;
         position: relative;
         position: absolute;
         top: 1rem;
@@ -129,22 +203,36 @@ a
             padding: 1rem;
             font-size: 1.6rem;
         }
+        .fa-heart::before {
+            content: white;
+            transition: 0.3s ease-out;
+        }
+        .fa-heart:hover::before{
+            font-weight:bold;
+            color: #9356dc;
+            cursor:pointer;
+        }
     }
+}
+.restaurant4{
+    margin-bottom: 4rem;
 }
 .footer{
     background-color:#353535;
-    height: 10rem;
+    height: 13rem;
 
     #footer__logoSite{
         filter: invert(100%);
-        width:40%; 
+        width:15rem; 
+        margin-left: 6%;
     }
     img{
         width:60%;
-        margin: 1rem;
+        margin-top: 0;
+        padding-top: 2rem;
     }
     .footer__liste{
-        margin-left: 1rem;
+        margin-left: 6%;
     }
     .footer__lien{
         color: white;

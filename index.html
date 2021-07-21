@@ -7,6 +7,9 @@
         <script src="https://kit.fontawesome.com/e81fede9df.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style/style.css"/>
         <link rel="stylesheet" media="screen and (max-width: 767px)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <title>Acceuil</title>
     </head>
     <body>
@@ -20,14 +23,14 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div id="localisation__texte">
-                        <p>Paris,Belleville</p>
+                        <p>Paris, Belleville</p>
                     </div>
                 </div>
                 <div id="presentation">
                     <h1>Réservez le menu qui vous convient</h1>
-                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <p id="sousTitre">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                     <div class="bouton">
-                        <button class="bouton__explorer">Explorer nos restaurants</button>
+                        <button id="bouton__explorer">Explorer nos restaurants</button>
                     </div>
                 </div>
             
@@ -50,10 +53,9 @@
             </section1>
 
             <section2 class="section_2">
-                <article class="article">
-                    <h2 class="article__titre">Restaurants</h2>
-                    <div class="restaurants">
-                         <div class="restaurant">
+                <h2 class="article__titre">Restaurants</h2>
+                    <article class="article">
+                        <div class="restaurant">
                             <a href="#">
                                 <img 
                                     class="restaurant__img"
@@ -71,7 +73,6 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
                         </div>
                         <div class="restaurant">
                             <a href="#">
@@ -111,7 +112,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="restaurant">
+                        <div class="restaurant restaurant4">
                             <a href="#">
                                 <img 
                                     class="restaurant__img"
@@ -130,7 +131,6 @@
                                 </div>
                             </a>
                         </div>           
-                    </div>
                 </article>
             </section2>
 
