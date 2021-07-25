@@ -139,6 +139,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .fonctionnement .fonctionnement__block .fa-mobile-alt {
@@ -159,8 +161,24 @@ a {
   margin-left: 1.5rem;
 }
 
-.fonctionnement .fonctionnement__degustez {
+.fonctionnement .fonctionnement__block:hover {
   background: #f1e6fd;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.fas {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.fas:hover {
+  -webkit-transform: scale(1.2) rotate(360deg);
+          transform: scale(1.2) rotate(360deg);
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
 }
 
 .fonctionnement {
@@ -216,10 +234,12 @@ a {
   max-width: 90%;
   height: 15rem;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 0px 0px 12px 0px #d2cccc;
-          box-shadow: 0px 0px 12px 0px #d2cccc;
+  -webkit-box-shadow: 0px 0px 10px 0px #d2cccc;
+          box-shadow: 0px 0px 10px 0px #d2cccc;
   margin-bottom: 5%;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .restaurant .restaurant__img {
@@ -293,6 +313,15 @@ a {
   cursor: pointer;
 }
 
+.restaurant:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0px 0px 20px #9356dc;
+          box-shadow: 0px 0px 20px #9356dc;
+}
+
 .restaurant4 {
   margin-bottom: 4rem;
 }
@@ -330,5 +359,132 @@ a {
 
 .footer .fa-hands-helping {
   margin-right: 0.5rem;
+}
+
+#header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#header__menu .fa-arrow-left {
+  position: absolute;
+  left: 2rem;
+  margin-top: 2.5rem;
+  font-size: 1.3rem;
+}
+
+#header__menu img {
+  width: 11rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#img__palette img {
+  height: 40rem;
+  width: 100%;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  top: -20px;
+}
+
+#article__menu1 {
+  position: relative;
+  top: -120px;
+  background-color: #F3F3F3;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin-bottom: 0rem;
+  height: auto;
+}
+
+#article__menu1 #menu1__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  margin: 2.5rem;
+  margin-top: 0.5rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#article__menu1 h2 {
+  margin-left: 2.5rem;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu_plat {
+  background-color: #F6F6F6;
+  height: 4.5rem;
+  width: 90%;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 2px 5px 10px 0px #e4e0e0;
+          box-shadow: 2px 5px 10px 0px #e4e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu_plat .plat__footer {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu .menu_plat .plat__prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
