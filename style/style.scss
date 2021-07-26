@@ -63,6 +63,13 @@ a
         margin-left: 1rem;
     }
 }
+#localisation:hover{
+    .fa-map-marker-alt{
+        transform: scale(1.20) rotate(360deg);
+        transition: transform 0.8s ease-out;
+        color: #9356dc;
+    }
+}
 #presentation{
     background:#FAFAFA;
     h1{
@@ -285,11 +292,14 @@ a
     flex-direction: row;
 
     .fa-arrow-left{
-
         position: absolute;
         left: 2rem;
         margin-top: 2.4rem;
         font-size: 1.3rem;
+        transition: 0.8s;
+    }
+    .fa-arrow-left:hover{
+        color: #9356dc;
     }
 
     img{
@@ -300,6 +310,9 @@ a
         align-items: baseline;
         justify-content: center;
         }
+    img:hover{
+        filter:invert(25%);
+    }
 }
 
 #img__palette{
@@ -469,7 +482,7 @@ a
 }
 
 .menu .menu_plat:hover .plat__prix{
-    margin-right: 23%;
+    margin-right: 21%;
     transition: all 0.6s ease;
 }
 .menu .menu_plat:hover .check{
@@ -478,4 +491,119 @@ a
 }
 .menu .menu_plat:hover .fa-check-circle{
     transform: rotate(0deg);
+}
+
+// LOADER
+
+.loader{
+    width: 100%;
+    height: 100%;
+    background: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: wait;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+    animation: oppacity 1.3s both;
+    animation-delay: 2s;
+
+    .lettre{
+        color: white;
+        font-family: "Shrikhand" , sans-serif;
+        font-size: 80px;
+        margin-bottom: 150px;
+        animation: flash  1.2s linear infinite;
+       
+    }
+}
+
+@keyframes flash {
+    0% {
+        color: #9356DC;
+        text-shadow: 0 0 7px #9356DC ;
+    }
+    90% {
+        color: #99E2D0;
+        text-shadow: none;
+    }
+    100% {
+        color: #FF79DA ;
+        text-shadow: 0 0 7px #FF79DA ;
+    }
+}
+@keyframes oppacity {
+    0% {
+        opacity: 1;
+        z-index: 999; 
+    }   
+    100% {
+        opacity: 0;
+        z-index: -4;
+    }
+}
+
+
+.lettre:nth-child(1) {
+    animation-delay:0.1s;
+}
+.lettre:nth-child(2) {
+    animation-delay:0.2s;
+}
+.lettre:nth-child(3) {
+    animation-delay:0.3s;
+}
+.lettre:nth-child(4) {
+    animation-delay:0.4s;
+}
+.lettre:nth-child(5) {
+    animation-delay:0.5s;
+}
+.lettre:nth-child(6) {
+    animation-delay:0.6s;
+}
+.lettre:nth-child(7) {
+    animation-delay:0.7s;
+}
+.lettre:nth-child(8) {
+    animation-delay:0.8s;
+}
+
+// DÉCALAGE MENU
+
+@keyframes affichage{
+    0% {
+        opacity: 0;
+    }
+    45% {
+        transform: translateY(0%);
+        opacity: 0.5;
+    }
+    65%{
+        transform: translateY(-20%);
+        opacity: 1;
+    }
+}
+
+.menu_plat1:nth-child(1) {
+    animation-delay:0.1s;
+}
+.menu_plat2:nth-child(2) {
+    animation-delay:1s;
+}
+.menu_plat3:nth-child(3) {
+    animation-delay:2s;
+}
+
+.menu_plat1{
+    animation: affichage 1s;
+}
+.menu_plat2{
+    animation: affichage 1s;
+    opacity: 1;
+}
+.menu_plat3{
+    animation: affichage 1s;
 }
