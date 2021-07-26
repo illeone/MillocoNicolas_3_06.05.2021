@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -112,7 +116,7 @@ a {
   color: #666565;
 }
 
-.section_1 h2 {
+#section_1 h2 {
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   margin-left: 1rem;
@@ -844,6 +848,11 @@ a {
           animation-delay: 0.5s;
 }
 
+.menu_plat4:nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
 .menu_plat1 {
   opacity: 0;
   -webkit-animation: affichage 0.8s both;
@@ -857,6 +866,12 @@ a {
 }
 
 .menu_plat3 {
+  opacity: 0;
+  -webkit-animation: affichage 0.8s both;
+          animation: affichage 0.8s both;
+}
+
+.menu_plat4 {
   opacity: 0;
   -webkit-animation: affichage 0.8s both;
           animation: affichage 0.8s both;

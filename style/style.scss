@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -81,7 +84,7 @@ a
         color: rgb(102, 101, 101);
     }
 }
-.section_1{
+#section_1{
     h2{
         margin-top: 2.5rem;
         margin-bottom: 1.5rem;
@@ -587,15 +590,15 @@ a
 
 .menu_plat1:nth-child(1) {
     animation-delay:0.1s;
-
 }
 .menu_plat2:nth-child(2) {
     animation-delay:0.3s;
-
 }
 .menu_plat3:nth-child(3) {
     animation-delay:0.5s;
-
+}
+.menu_plat4:nth-child(4) {
+    animation-delay:0.7s;
 }
 
 .menu_plat1{
@@ -607,6 +610,10 @@ a
     animation: affichage 0.8s both;
 }
 .menu_plat3{
+    opacity: 0 ;
+    animation: affichage 0.8s both;
+}
+.menu_plat4{
     opacity: 0 ;
     animation: affichage 0.8s both;
 }
