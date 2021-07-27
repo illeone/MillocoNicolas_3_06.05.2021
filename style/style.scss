@@ -510,7 +510,7 @@ a
 	position: fixed;
 	top: 0;
 	z-index: 1;
-    animation: oppacity 1.3s both;
+    animation: oppacity 0.7s both;
     animation-delay: 2s;
 
     .lettre{
@@ -592,13 +592,13 @@ a
     animation-delay:0.1s;
 }
 .menu_plat2:nth-child(2) {
-    animation-delay:0.3s;
+    animation-delay:0.4s;
 }
 .menu_plat3:nth-child(3) {
-    animation-delay:0.5s;
+    animation-delay:0.7s;
 }
 .menu_plat4:nth-child(4) {
-    animation-delay:0.7s;
+    animation-delay:0.9s;
 }
 
 .menu_plat1{
