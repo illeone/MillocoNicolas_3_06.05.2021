@@ -85,7 +85,19 @@ a {
           justify-content: center;
   font-size: large;
   font-weight: bolder;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-bottom: 0;
+}
+
+#localisation input[type=search] {
+  border: 0;
+  font-size: 1rem;
+  width: 10rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  outline: none;
+  background-color: transparent;
 }
 
 #localisation #localisation__texte {
@@ -102,11 +114,20 @@ a {
   color: #9356dc;
 }
 
+.fa-map-marker-alt {
+  margin-left: 2.5rem;
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+}
+
 #presentation {
   background: #FAFAFA;
 }
 
 #presentation h1 {
+  font-family: 'Roboto';
   margin-top: 0rem;
   font-size: 1.6rem;
 }
@@ -197,7 +218,6 @@ a {
   transition: -webkit-transform 0.8s ease-out;
   transition: transform 0.8s ease-out;
   transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
-  color: #9356dc;
 }
 
 .fas {
@@ -239,6 +259,51 @@ a {
   left: 3%;
 }
 
+.fonctionnement__block:hover::before {
+  -webkit-animation: bounce 1.5s ease;
+          animation: bounce 1.5s ease;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 25%, 55%, 75%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  45% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  65% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  85% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes bounce {
+  0%, 25%, 55%, 75%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  45% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  65% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  85% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
 .article {
   background: #F3F3F3;
   display: -webkit-box;
@@ -263,9 +328,10 @@ a {
 
 .restaurant {
   background-color: #F3F3F3;
+  width: 90%;
   min-width: 35%;
   max-width: 90%;
-  height: 15rem;
+  height: 16rem;
   border-radius: 1.5rem;
   -webkit-box-shadow: 0px 0px 10px 0px #d2cccc;
           box-shadow: 0px 0px 10px 0px #d2cccc;
@@ -291,6 +357,7 @@ a {
   color: #1b5849;
   position: relative;
   position: absolute;
+  border-radius: 0.2rem;
   top: 1rem;
   right: 0.75rem;
   padding: 0.5rem;
@@ -313,37 +380,12 @@ a {
 }
 
 .restaurant .restaurant__footer .restaurant__nom {
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .restaurant .restaurant__footer .restaurant__lieu {
   margin-top: 0.5rem;
-}
-
-.restaurant .restaurant__footer .restaurant__coeur {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem;
-  font-size: 1.6rem;
-}
-
-.restaurant .restaurant__footer .fa-heart::before {
-  content: white;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-}
-
-.restaurant .restaurant__footer .fa-heart:hover::before {
-  font-weight: bold;
-  color: #9356dc;
-  cursor: pointer;
 }
 
 .restaurant:hover {
@@ -424,6 +466,12 @@ a {
 
 #header__menu .fa-arrow-left:hover {
   color: #9356dc;
+  -webkit-transform: scale(1.2) rotate(360deg);
+          transform: scale(1.2) rotate(360deg);
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
 }
 
 #header__menu img {
@@ -458,7 +506,7 @@ a {
 
 #article__menu1 {
   position: relative;
-  top: -120px;
+  margin-top: -120px;
   background-color: #F3F3F3;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
@@ -467,6 +515,7 @@ a {
 }
 
 #article__menu1 #menu1__titre {
+  font-family: 'Shrikhand';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,15 +605,14 @@ a {
   transition: all 0.6s ease;
 }
 
-.menu h3 {
-  margin-left: 1rem;
+.menu .menu_plat h3 {
+  margin-left: 2rem;
   padding-bottom: 0rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
-.menu p {
-  margin-left: 1rem;
+.menu .menu_plat p {
+  margin-left: 2rem;
+  max-width: 20rem;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -652,7 +700,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   color: white;
   z-index: 2;
@@ -664,6 +711,8 @@ a {
   font-size: 25px;
   -webkit-transform: rotate(210deg);
           transform: rotate(210deg);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .menu .menu_plat:hover .plat__prix {
@@ -680,6 +729,8 @@ a {
 .menu .menu_plat:hover .fa-check-circle {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .loader {
@@ -809,8 +860,8 @@ a {
 
 @-webkit-keyframes affichage {
   0% {
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
     opacity: 0;
   }
   100% {
@@ -822,8 +873,8 @@ a {
 
 @keyframes affichage {
   0% {
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
     opacity: 0;
   }
   100% {
@@ -875,5 +926,62 @@ a {
   opacity: 0;
   -webkit-animation: affichage 0.8s both;
           animation: affichage 0.8s both;
+}
+
+@-webkit-keyframes animationCoeur {
+  0% {
+    background-size: 100% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes animationCoeur {
+  0% {
+    background-size: 100% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.restaurant__coeurPlein {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1rem;
+  font-size: 2rem;
+  padding: 0;
+  -webkit-text-stroke: black 2px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.restaurant__coeurPlein:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-animation: animationCoeur 0.4s linear;
+  animation: animationCoeur 0.4s linear;
+  -webkit-text-stroke: #F3F3F3 0.5px;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: -webkit-transform none;
+  transition: -webkit-transform none;
+  transition: transform none;
+  transition: transform none, -webkit-transform none;
 }
 /*# sourceMappingURL=style.css.map */
