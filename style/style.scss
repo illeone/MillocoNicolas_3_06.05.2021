@@ -289,6 +289,7 @@ a
         // }
     }
 }
+
 .restaurant:hover{
     transform: scale(1.01);
     transition: 1s;
@@ -416,6 +417,13 @@ a
         margin-left: 2.5rem;
     }
 }
+// @media (min-width: 701px) and (max-width: 1400px){
+//     #article__menu1{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     }
+// }
 
 .menu{
     display: flex;
@@ -443,14 +451,24 @@ a
         h3{
             margin-left: 2rem;
             padding-bottom: 0rem;
+            min-width: 80%;
+
         }
         p{
+            cursor: pointer;
             margin-left: 2rem;
-            max-width: 20rem;
-            white-space: nowrap;
-            text-overflow: ellipsis;
         }        
     }
+}
+.plat__footer{
+        background-color:white;
+        width: 400px;
+        margin:0 auto;
+        border-radius: 1.5rem;
+        top: 100px; 
+        padding: 10px;  
+        box-shadow: 2px 5px 10px 0px #e4e0e0;
+        cursor: pointer;
 }
 
 
@@ -738,6 +756,7 @@ a
     cursor: pointer;
     background: linear-gradient(#9356dc, #ff79da);
     background-size: 100% 100%;
+    background-clip:content-box;
     -webkit-background-clip: text;
     background-clip: text;
     background-position: bottom;
