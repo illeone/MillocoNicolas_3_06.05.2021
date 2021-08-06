@@ -267,6 +267,9 @@ a
         .restaurant__lieu{
             margin-top: 0.5rem;
         }
+        .restaurant__coeurPlein{
+            margin-right: 1rem;
+        }
         
         // .fa-heart{
         //     display: flex;
@@ -390,31 +393,27 @@ a
         display: flex;
         align-items: center;
         height: 3rem;
-        margin: 2.5rem;
         margin-top: 0.5rem;
         padding-top: 2rem;
         font-size: 2rem;
         position: relative;
         justify-content: space-between;
-    }
-    .coeur{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        font-size: 1.6rem;
-    }
-    .coeur::before {
-        content: white;
-        transition: 0.3s ease-out;
-    }
-    .coeur:hover::before{
-        font-weight:bold;
-        color: #9356dc;
-        cursor:pointer;
+
+        h1{
+            font-size: 1.7rem;
+            font-weight: 50;
+            margin-left: 4%;
+        }
+        .restaurant__coeurPlein{
+            margin-right: 4%;
+
+        }
     }
     h2{
-        margin-left: 2.5rem;
+        margin-top: 2rem;
+        margin-left: 4%;
+        font-size: 1.1rem;
+        font-weight: 50;
     }
 }
 // @media (min-width: 701px) and (max-width: 1400px){
@@ -433,42 +432,57 @@ a
 
     .menu_plat{
         background-color: white;
-        height: 4.5rem;
-        width: 90%;
+        height: 5rem;
+        width: 94%;
         margin-bottom: 1rem;
-        border-radius: 1.5rem;
+        border-radius: 1rem;
+        padding-top: 0rem;
         box-shadow: 2px 5px 10px 0px #e4e0e0;
         display: flex;
         align-items:flex-end;
         justify-content: space-between;
-        line-height: 0.5rem;
         cursor: pointer;
 
         .plat__prix{
-            margin-right: 2rem;  
+            margin-right: 1rem;  
             transition: all 0.6s ease;
+            margin-left: 0rem;
+            font-weight: bolder;
         }
         h3{
-            margin-left: 2rem;
-            padding-bottom: 0rem;
-            min-width: 80%;
+            font-size: 1.25rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0rem;
+            margin-bottom: 0.4rem;
+            margin-left: 0.8rem;
+            padding: 0rem;
 
         }
         p{
             cursor: pointer;
-            margin-left: 2rem;
+            margin-left: 0.8rem;
+            margin-top: 0rem;
+            padding-top: 0rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }        
     }
 }
 .plat__footer{
-        background-color:white;
-        width: 400px;
-        margin:0 auto;
-        border-radius: 1.5rem;
-        top: 100px; 
-        padding: 10px;  
-        box-shadow: 2px 5px 10px 0px #e4e0e0;
-        cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+//         background-color:white;
+//         width: 400px;
+//         margin:0 auto;
+//         border-radius: 1.5rem;
+//         top: 100px; 
+//         padding: 10px;  
+//         box-shadow: 2px 5px 10px 0px #e4e0e0;
+//         cursor: pointer;
 }
 
 
@@ -489,7 +503,7 @@ a
     justify-content: center;
 
     .bouton__commander{
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-bottom: 3rem;
         border: 0;
         padding: 0.80rem 1.4rem;
@@ -553,7 +567,7 @@ a
     transition: all 0.6s ease;
 }
 .menu .menu_plat:hover .check{
-    margin-right: 14%;
+    margin-right: 18%;
     z-index: 2;
 }
 .menu .menu_plat:hover .fa-check-circle{
@@ -743,8 +757,7 @@ a
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 0;
     -webkit-text-stroke:black 2px;
     -webkit-background-clip: text;
@@ -761,8 +774,8 @@ a
     background-clip: text;
     background-position: bottom;
     background-repeat: no-repeat;
-    -webkit-animation: animationCoeur 0.4s linear;
-    animation: animationCoeur 0.4s linear;
+    -webkit-animation:ease-in-out  animationCoeur 0.4s;
+    animation:ease-in-out animationCoeur 0.4s;
     -webkit-text-stroke:#F3F3F3 0.5px;
     transform: none;
     transition: transform none;
