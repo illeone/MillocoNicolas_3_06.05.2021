@@ -457,11 +457,14 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #F3F3F3;
+  height: 5rem;
+  z-index: 1;
 }
 
 #header__menu .fa-arrow-left {
   position: absolute;
-  left: 2rem;
+  left: 5%;
   margin-top: 2.4rem;
   font-size: 1.3rem;
   -webkit-transition: 0.8s;
@@ -504,8 +507,9 @@ a {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 500px;
-  top: -20px;
+  height: 400px;
+  top: -60px;
+  z-index: -1;
 }
 
 #article__menu1 {
@@ -570,7 +574,7 @@ a {
 
 .menu .menu_plat {
   background-color: white;
-  height: 5rem;
+  height: 4.5rem;
   width: 94%;
   margin-bottom: 1rem;
   border-radius: 1rem;
@@ -597,8 +601,13 @@ a {
   font-weight: bolder;
 }
 
+.menu .menu_plat .plat__prix p {
+  font-weight: bolder;
+  color: black;
+}
+
 .menu .menu_plat h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -610,12 +619,14 @@ a {
 
 .menu .menu_plat p {
   cursor: pointer;
+  font-size: 0.85rem;
   margin-left: 0.8rem;
   margin-top: 0rem;
   padding-top: 0rem;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  color: #615e5e;
 }
 
 .plat__footer {
