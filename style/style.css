@@ -821,7 +821,7 @@ a {
 
 #article__menu1 h2::after {
   content: "";
-  border-bottom: solid #99E2D0;
+  border-bottom: 2px solid  #99E2D0;
   display: block;
   width: 3rem;
   margin-top: 0.5rem;
