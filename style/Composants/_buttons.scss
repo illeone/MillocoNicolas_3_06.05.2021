@@ -30,6 +30,18 @@ a
     }
 }
 
+// FONT AWESOME
+
+.fas{
+    transition: 0.8s;
+    }
+    .fas:hover{
+    transform: scale(1.20) rotate(360deg);
+    transition: transform 0.8s ease-out;
+    }
+
+// MENU RETRACTABLE CHECK
+
 .check{
     display: flex;
     position: absolute;
@@ -98,6 +110,7 @@ a
     transform: none;
     transition: none;
 }
+
 // DÉCALAGE MENU
 
 @keyframes affichage{

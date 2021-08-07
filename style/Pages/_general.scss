@@ -6,6 +6,9 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+// INDEX
+// PRESENTATION
+
 #presentation{
     background:#FAFAFA;
     h1{
@@ -25,6 +28,9 @@ body{
         margin-left: 1rem;
     }
 }
+
+// FONCTIONNEMENT
+
 .fonctionnement{
     height: 18rem;
     display: flex;
@@ -32,6 +38,7 @@ body{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 3rem;
+    counter-reset: compteListe;
 
     .fonctionnement__block{
         background-color: #F6F6F6;
@@ -69,9 +76,9 @@ body{
         }
     }
 }
-.fonctionnement{
-    counter-reset: compteListe;
-}
+
+// RONDS NUMEROTES
+
 .fonctionnement__block::before{
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
@@ -90,7 +97,6 @@ body{
     animation: bounce 1.5s ease;
     animation-delay: 0.25s;
 }
-
 @keyframes bounce{
     0%, 25%, 55%, 75%, 100%{
         transform: translateX(0);
@@ -106,6 +112,8 @@ body{
     }
 }
 
+// ARTICLE
+
 .article{
     background: #F3F3F3;
     display: flex;
@@ -117,10 +125,8 @@ body{
     margin-bottom: 0;
     padding-bottom: 1.5rem;
     padding-top: 3rem;
-    padding-left: 1rem;
-     
+    padding-left: 1rem;   
 }
-
 
 .restaurant{
     background-color: #F3F3F3;
@@ -184,7 +190,7 @@ body{
     margin-bottom: 4rem;
 }
 
-
+// CARTE
 
 #img__palette{
     img{
@@ -227,22 +233,6 @@ body{
 
         }
     }
-}
-
-   // CARTE
-   .carte{
-    display: flex;
-    justify-content:space-around;
-    width: 100%;
-
-    h2{
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-    }
-}
-
-.menu{
-    width: 23rem;
 }
 
 .carte{
@@ -391,12 +381,28 @@ body{
             height: 16rem;
         }
     }
+
+    // CARTE
+    .carte{
+        display: flex;
+        justify-content:space-around;
+        width: 100%;
+
+        h2{
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .menu{
+        width: 23rem;
+    }
     .footer{
         display: flex;
         align-items: center;
         justify-content: center;
         padding-right: 1.5rem;
-    
+
         #footer__logoSite{
             padding-bottom: 1.5rem;
             border-right: rgb(15, 14, 14) 2px solid;
@@ -406,7 +412,6 @@ body{
         }
     }
 }
- 
 
 @media (min-width: 701px) and (max-width: 1100px){
     // INDEX1
