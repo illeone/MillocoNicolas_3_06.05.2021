@@ -1,0 +1,46 @@
+.footer__lien:hover{
+    .fas{
+    transform: scale(1.20) rotate(360deg);
+    transition: transform 0.8s ease-out;
+    }
+}
+.fas{
+transition: 0.8s;
+}
+.fas:hover{
+transform: scale(1.20) rotate(360deg);
+transition: transform 0.8s ease-out;
+}
+
+.footer{
+    background-color:#353535;
+    height: 13rem;
+
+    #footer__logoSite{
+        filter: invert(100%);
+        width:15rem; 
+        margin-left: 6%;
+    }
+    img{
+        width:60%;
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+    .footer__liste{
+        margin-left: 6%;
+    }
+    .footer__lien{
+        color: white;
+        line-height: 1.5rem;
+    }
+    .footer__lien:hover{
+        color: #9356dc;
+        line-height: 1.5rem;
+    }
+    .fa-utensils{
+        margin-right: 1rem;
+    }
+    .fa-hands-helping{
+        margin-right: 0.5rem;
+    }
+}

@@ -1,0 +1,38 @@
+#localisation{
+    background: #F3F3F3;
+    box-shadow: 5px 12px 5px -10px #d2cccc inset;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: large;
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+
+    input[type=search]{
+
+    border: 0;
+    font-size: 1rem;
+    width: 10rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    outline: none;
+    background-color:transparent;
+    }
+
+    #localisation__texte{
+        margin-left: 1rem;
+    }
+}
+#localisation:hover{
+    .fa-map-marker-alt{
+        transform: scale(1.20) rotate(360deg);
+        transition: transform 0.8s ease-out;
+        color: #9356dc;
+    }
+}
+.fa-map-marker-alt{
+    margin-left: 2.5rem;
+    transition: transform 0.8s ease-out;
+}
