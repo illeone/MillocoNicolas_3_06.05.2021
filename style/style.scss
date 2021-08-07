@@ -385,7 +385,6 @@ a
 
         h1{
             font-size: 1.7rem;
-            font-weight: 50;
             margin-left: 4%;
         }
         .restaurant__coeurPlein{
@@ -527,7 +526,6 @@ a
         margin-left: 4%;
         margin-top: 3rem;
         font-size: 1.1rem;
-        font-weight: 50;
     }
 }
 
@@ -600,7 +598,7 @@ a
         display: block;
         width: 3rem;
         margin-top: 0.5rem;
-        display: hidden;     
+        display: none;     
     }
 }
 
@@ -826,7 +824,6 @@ a
     padding: 0;
     -webkit-text-stroke:black 2px;
     -webkit-background-clip: text;
-    background-clip: text;
     color: transparent;
 }
 
@@ -836,12 +833,11 @@ a
     background-size: 100% 100%;
     background-clip:content-box;
     -webkit-background-clip: text;
-    background-clip: text;
     background-position: bottom;
     background-repeat: no-repeat;
     -webkit-animation:ease-in-out  animationCoeur 0.4s;
     animation:ease-in-out animationCoeur 0.4s;
     -webkit-text-stroke:#F3F3F3 0.5px;
     transform: none;
-    transition: transform none;
+    transition: none;
 }
