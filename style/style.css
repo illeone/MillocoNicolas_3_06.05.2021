@@ -30,32 +30,6 @@
   padding-top: 2rem;
 }
 
-.header #bouton__explorer {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  border: 0;
-  padding: 0.80rem 1.4rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 2rem;
-  color: white;
-  background-image: linear-gradient(174deg, #ff79da 18%, #9356dc 86%);
-  cursor: pointer;
-  -webkit-box-shadow: 0px 2px 5px 1px #b1acac;
-          box-shadow: 0px 2px 5px 1px #b1acac;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.header #bouton__explorer:hover {
-  -webkit-box-shadow: 0px 4px 8px 1px #696565;
-          box-shadow: 0px 4px 8px 1px #696565;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-filter: brightness(108%);
-          filter: brightness(108%);
-}
-
 #header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,11 +154,13 @@ body {
 #presentation h1 {
   font-family: 'Roboto';
   margin-top: 0rem;
-  font-size: 1.6rem;
+  font-size: 1.65rem;
+  width: 75%;
+  margin-left: 12%;
 }
 
 #presentation #sousTitre {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: #666565;
 }
 
@@ -833,6 +809,32 @@ a {
   color: black;
 }
 
+.header #bouton__explorer {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border: 0;
+  padding: 0.80rem 1.4rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  color: white;
+  background-image: linear-gradient(174deg, #ff79da 18%, #9356dc 86%);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 5px 1px #b1acac;
+          box-shadow: 0px 2px 5px 1px #b1acac;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header #bouton__explorer:hover {
+  -webkit-box-shadow: 0px 4px 8px 1px #696565;
+          box-shadow: 0px 4px 8px 1px #696565;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-filter: brightness(108%);
+          filter: brightness(108%);
+}
+
 .bouton {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1080,8 +1082,8 @@ a {
 .loader .lettre {
   color: white;
   font-family: "Shrikhand" , sans-serif;
-  font-size: 80px;
-  margin-bottom: 150px;
+  font-size: 50px;
+  margin-bottom: 180px;
   -webkit-animation: flash  1.2s linear infinite;
           animation: flash  1.2s linear infinite;
 }
@@ -1176,5 +1178,18 @@ a {
 .lettre:nth-child(8) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
+}
+
+@media (min-width: 1101px) and (max-width: 1400px) {
+  .loader .lettre {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .loader .lettre {
+    font-size: 80px;
+    margin-bottom: 180px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

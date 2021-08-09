@@ -16,10 +16,9 @@
     .lettre{
         color: white;
         font-family: "Shrikhand" , sans-serif;
-        font-size: 80px;
-        margin-bottom: 150px;
-        animation: flash  1.2s linear infinite;
-       
+        font-size: 50px;
+        margin-bottom: 180px;
+        animation: flash  1.2s linear infinite;   
     }
 }
 
@@ -73,4 +72,21 @@
 }
 .lettre:nth-child(8) {
     animation-delay:0.8s;
+}
+
+@media (min-width: 1101px) and (max-width: 1400px){
+    .loader{   
+        .lettre{
+            font-size: 90px; 
+        }
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px){
+    .loader{
+        .lettre{
+            font-size: 80px;
+            margin-bottom: 180px;   
+        }
+    }
 }
