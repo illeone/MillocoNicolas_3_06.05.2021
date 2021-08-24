@@ -64,6 +64,25 @@ a
 
 // MENU RETRACTABLE CHECK
 
+.menu_plat{
+    position: relative;
+    overflow: hidden;
+}
+.menu_plat::after{
+    content: "";
+    background: #99E2D0;
+    position: absolute;
+    right: 0%;
+    transform:translate(85%);
+    z-index: 1;
+    transition: all 0.6s ease;
+    width: 0%;
+    height: 100%;
+}
+.menu_plat:hover::after{
+    width: 100%;
+}
+
 .check{
     display: flex;
     position: absolute;
@@ -133,7 +152,7 @@ a
     transition: none;
 }
 
-// DÉCALAGE MENU
+// AFFICHAGE MENU
 
 @keyframes affichage{
 
@@ -146,6 +165,20 @@ a
         opacity: 1;
     }
 }
+
+.menu_plat1{
+    animation: affichage 0.8s both;
+}
+.menu_plat2{
+    animation: affichage 0.8s both;
+}
+.menu_plat3{
+    animation: affichage 0.8s both;
+}
+.menu_plat4{
+    animation: affichage 0.8s both;
+}
+
 
 .menu_plat1:nth-child(1) {
     animation-delay:0.1s;
@@ -160,19 +193,3 @@ a
     animation-delay:0.9s;
 }
 
-.menu_plat1{
-    opacity: 0;
-    animation: affichage 0.8s both;
-}
-.menu_plat2{
-    opacity: 0;
-    animation: affichage 0.8s both;
-}
-.menu_plat3{
-    opacity: 0 ;
-    animation: affichage 0.8s both;
-}
-.menu_plat4{
-    opacity: 0 ;
-    animation: affichage 0.8s both;
-}
